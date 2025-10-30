@@ -58,19 +58,6 @@ Two datasets were used for experimentation:
 
 ---
 
-## 🧾 Results Summary
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-|:------|:----------|:-----------|:--------|:----------|
-| Logistic Regression | ~78% | - | - | - |
-| Naive Bayes | ~76% | - | - | - |
-| Random Forest | **~82–84%** | - | - | - |
-| Neural Network | **~83–85%** | - | - | - |
-
-> *(Exact values vary slightly between the Pima and Kaggle datasets.)*
-
----
-
 ## 📊 Key Findings
 - Random Forest and Neural Network achieved the **best predictive performance**.  
 - The Kaggle BRFSS dataset improved **model robustness and generalization**.  
@@ -78,13 +65,6 @@ Two datasets were used for experimentation:
 
 ---
 
-## 🛠️ Technologies Used
-- Python 3.x
-- NumPy, Pandas, Matplotlib, Seaborn
-- Scikit-learn
-- TensorFlow / Keras
-
----
 
 ## 📈 Future Improvements
 - Add hyperparameter tuning (GridSearchCV).
