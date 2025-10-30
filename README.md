@@ -79,18 +79,22 @@ Two datasets were used for experimentation:
 ---
 
 ## 🛠️ Technologies Used
--Python 3.x
--NumPy, Pandas, Matplotlib, Seaborn
--Scikit-learn
--TensorFlow / Keras
+- Python 3.x
+- NumPy, Pandas, Matplotlib, Seaborn
+- Scikit-learn
+- TensorFlow / Keras
+
+---
 
 ## 📈 Future Improvements
--Add hyperparameter tuning (GridSearchCV).
--Implement cross-validation for robust evaluation.
--Integrate explainable AI for feature importance interpretation.
--Deploy as a web app for real-time diabetes risk prediction.
+- Add hyperparameter tuning (GridSearchCV).
+- Implement cross-validation for robust evaluation.
+- Integrate explainable AI for feature importance interpretation.
+- Deploy as a web app for real-time diabetes risk prediction.
+
+---
 
 📚 References
--Khanam & Foo (2021). Efficient Machine Learning Model for Diabetes Prediction. ICT Express.
--Kaggle Dataset – Diabetes Health Indicators (BRFSS 2015)
--UCI Repository – Pima Indians Diabetes Database
+- Khanam & Foo (2021). Efficient Machine Learning Model for Diabetes Prediction. ICT Express.
+- Kaggle Dataset – Diabetes Health Indicators (BRFSS 2015)
+- UCI Repository – Pima Indians Diabetes Database
