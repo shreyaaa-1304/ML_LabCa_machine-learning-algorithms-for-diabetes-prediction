@@ -76,5 +76,5 @@ Two datasets were used for experimentation:
 
 📚 References
 - Khanam & Foo (2021). Efficient Machine Learning Model for Diabetes Prediction. ICT Express.
-- Kaggle Dataset – Diabetes Health Indicators (BRFSS 2015)
-- UCI Repository – Pima Indians Diabetes Database
+- Kaggle Dataset – Diabetes Health Indicators (BRFSS 2015) (https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset)
+- UCI Repository – Pima Indians Diabetes Database (https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
