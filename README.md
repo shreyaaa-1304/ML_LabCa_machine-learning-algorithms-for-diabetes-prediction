@@ -1,89 +1,133 @@
-**Author:** Shreya Jadhav
-**Roll No:** 16014223077
+Efficient Machine Learning Model for Diabetes Prediction
+Author: Shreya Jadhav
 
----
+Roll No: 16014223077
 
-### 1. Problem Definition
+📘 Overview
 
-Develop an efficient machine learning model for predicting diabetes using publicly available datasets. Compare multiple algorithms to identify the best-performing model for accurate diabetes prediction.
+This project reproduces and extends the research paper
+“Efficient Machine Learning Model for Diabetes Prediction” (Khanam & Foo, 2021)
+to develop an accurate and scalable diabetes prediction system using multiple machine learning algorithms.
 
----
+Two datasets were used for experimentation:
 
-### 2. Literature Study
+Pima Indians Diabetes Dataset (Baseline model)
 
-The methodology reproduces and extends the research paper *“Efficient Machine Learning Model for Diabetes Prediction” (Khanam & Foo, 2021)*. Various supervised learning algorithms were implemented to analyze diabetes prediction performance using real-world data.
+Kaggle BRFSS 2015 Diabetes Health Indicators Dataset (Extended, large-scale version)
 
----
+🧠 Objectives
 
-### 3. Data Collection
+Implement and compare various machine learning algorithms for diabetes prediction.
 
-* **Primary Dataset:** Pima Indians Diabetes Dataset (baseline implementation)
-* **Extended Dataset:** Kaggle *Diabetes Health Indicators (BRFSS 2015)* dataset for scalability and realism.
+Evaluate models based on multiple performance metrics.
 
----
+Extend the methodology to a larger, real-world dataset for better generalization.
 
-### 4. Data Preprocessing
+Integrate a simple Artificial Neural Network (ANN) for performance benchmarking.
 
-* Handled missing values using mean imputation.
-* Removed outliers using the Interquartile Range (IQR) method.
-* Performed feature selection using Pearson correlation (>0.2).
-* Normalized features using **MinMaxScaler**.
-* Split dataset into **85% training** and **15% testing** sets (stratified sampling).
+⚙️ Methodology
+1. Data Preprocessing
 
----
+Replaced zero or missing values with mean imputation.
 
-### 5. Model Implementation
+Removed outliers using the IQR (Interquartile Range) method.
 
-Implemented and trained the following machine learning models using **Scikit-learn** and **TensorFlow**:
+Performed feature selection using Pearson correlation (> 0.2).
 
-* Logistic Regression
-* Naive Bayes (GaussianNB)
-* Support Vector Machine (SVM)
-* Decision Tree Classifier
-* Random Forest Classifier
-* K-Nearest Neighbors (KNN)
-* AdaBoost Classifier
-* Artificial Neural Network (Sequential Model with 2 hidden layers, 400 epochs)
+Normalized data with MinMaxScaler (0–1 scaling).
 
----
+Train-test split: 85% training, 15% testing (stratified).
 
-### 6. Hyperparameter Tuning
+2. Implemented Models
 
-No explicit hyperparameter tuning (e.g., GridSearchCV) was performed. Default parameters were used for fairness and simplicity across all models.
+Logistic Regression
 
----
+Naive Bayes (GaussianNB)
 
-### 7. Model Evaluation
+Support Vector Machine (SVM - Linear Kernel)
 
-Evaluation metrics used:
+Decision Tree
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* ROC–AUC
+Random Forest
 
-Visualizations included:
+K-Nearest Neighbors (KNN)
 
-* Confusion matrices for all models
-* ROC curves for model comparison
-* Accuracy bar chart comparison
+AdaBoost
 
----
+Artificial Neural Network (2 hidden layers, 400 epochs, ReLU activations)
 
-### 8. Result Analysis
+3. Evaluation Metrics
 
-All models were compared using evaluation metrics. Random Forest and Neural Network models achieved the highest accuracy. The results were consistent with findings from the original research paper.
+Accuracy
 
----
+Precision
 
-### 9. Dataset Extension (Improvement)
+Recall
 
-The implementation was extended from the smaller **Pima Indians dataset** to the larger **Kaggle BRFSS 2015 dataset**, improving model scalability and robustness. Data preprocessing and evaluation steps were adapted to handle higher dimensionality.
+F1-Score
 
----
+ROC–AUC
 
-### ✅ Summary
+4. Visualization
 
-All steps — from literature study to model evaluation — were successfully implemented, except explicit hyperparameter tuning. The project effectively demonstrates reproducibility, adaptability, and comparative performance analysis of multiple ML models for diabetes prediction.
+Confusion Matrices
 
+ROC Curves
+
+Accuracy Comparison Bar Charts
+
+Neural Network Training vs Validation Accuracy Plot
+
+🧾 Results Summary
+Model	Accuracy	Precision	Recall	F1-Score
+Logistic Regression	~78%	-	-	-
+Naive Bayes	~76%	-	-	-
+Random Forest	~82–84%	-	-	-
+Neural Network	~83–85%	-	-	-
+
+(Exact values vary slightly between Pima and Kaggle datasets.)
+
+📊 Key Findings
+
+Random Forest and Neural Network achieved the best predictive performance.
+
+The Kaggle BRFSS dataset improved model robustness and generalization.
+
+The results aligned closely with the original study’s conclusions.
+
+🧩 Project Structure
+📁 diabetes_prediction/
+│
+├── 📄 diabetes_pima_model.py           # Pima Indians Diabetes implementation
+├── 📄 diabetes_kaggle_brfss_model.py   # Kaggle BRFSS 2015 implementation
+├── 📄 README.md                        # Project documentation
+├── 📄 requirements.txt                 # Dependencies
+└── 📁 results/                         # Plots, confusion matrices, ROC curves
+
+🛠️ Technologies Used
+
+Python 3.x
+
+NumPy, Pandas, Matplotlib, Seaborn
+
+Scikit-learn
+
+TensorFlow / Keras
+
+📈 Future Improvements
+
+Add hyperparameter tuning (GridSearchCV).
+
+Implement cross-validation for more robust metrics.
+
+Integrate explainable AI techniques for feature importance analysis.
+
+Deploy as a simple web app for real-time diabetes risk prediction.
+
+📚 References
+
+Khanam & Foo (2021). Efficient Machine Learning Model for Diabetes Prediction. ICT Express.
+
+Kaggle Dataset: Diabetes Health Indicators (BRFSS 2015)
+
+UCI Repository: Pima Indians Diabetes Database
